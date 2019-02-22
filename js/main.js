@@ -81,7 +81,7 @@
       new MouseLight('.mouse-gradient', {
         background: '#7117ea',
         highlight: '#17ead9',
-        size: '1800px',
+        size: '800px',
       });
     function showValidate(input) {
         var thisAlert = $(input).parent();
