@@ -5,13 +5,13 @@
 
       countdown100: function(options) {
         var defaults = {
-          timeZone: "",
+          timeZone: "Asia/Kolkata",
           endtimeYear: 0,
           endtimeMonth: 0,
-          endtimeDate: 0,
-          endtimeHours: 0,
-          endtimeMinutes: 0,
-          endtimeSeconds: 0,
+          endtimeDate: 69,
+          endtimeHours: 23,
+          endtimeMinutes: 58,
+          endtimeSeconds: 45,
         }
 
         var options =  $.extend(defaults, options);
@@ -80,7 +80,9 @@
             var timeinterval = setInterval(updateClock, 1000);
           }
 
-          
+          $('#counter').countdown({
+            timestamp : Date.UTC(2015, 9, 25, 7)
+        });
 
 
         });
