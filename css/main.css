@@ -1,15 +1,4 @@
-/*------------------------------------------------------------------
-Project:  ComingSoon
-Version:  
-Last change:  
-Assigned to:  Bach Le
-Primary use:  
--------------------------------------------------------------------*/
 
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
 
 @font-face {
   font-family: Montserrat-Regular;
@@ -31,15 +20,14 @@ Primary use:
   src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
 }
 
+#content {
+  z-index: 99;
+}
 
-/*//////////////////////////////////////////////////////////////////
-[ RS PLUGIN ]*/
-/*---------------------------------------------*/
 .container {max-width: 1200px;}
 
 
-/*//////////////////////////////////////////////////////////////////
-[ rs Modal ]*/
+
 
 body {padding-right: 0px !important;}
 .modal {
@@ -69,15 +57,11 @@ body {padding-right: 0px !important;}
   padding: 50px 15px;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Form ]*/
 
 .contact100-form {
   width: 100%;
 }
 
-/*------------------------------------------------------------------
-[ Input ]*/
 
 .wrap-input100 {
   width: 100%;
@@ -88,7 +72,7 @@ body {padding-right: 0px !important;}
   border-radius: 25px;
 }
 
-/*---------------------------------------------*/
+
 .input100 {
   display: block;
   width: 100%;
@@ -101,8 +85,6 @@ input.input100 {
 }
 
 
-/*------------------------------------------------------------------
-[ Focus Input ]*/
 
 .focus-input100 {
   position: absolute;
@@ -141,8 +123,7 @@ input.input100 {
   transform: scale(1);
 }
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
+
 
 .validate-input {
   position: relative;
@@ -208,19 +189,12 @@ input.input100 {
   }
 }
 
-/*==================================================================
-    TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
-==================================================================*/
 
-/*==================================================================
-[ Color ]*/
 .cl0 {color: #fff;}
 
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ S-Text 0 - 15 ]*/
 .s1-txt1 {
   font-family: Montserrat-Regular;
   font-size: 12px;
@@ -257,8 +231,7 @@ input.input100 {
   line-height: 1.6666667;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ M-Text 16 - 25 ]*/
+
 .m1-txt1 {
   font-family: Montserrat-Black;
   font-size: 24px;
@@ -275,8 +248,6 @@ input.input100 {
   text-transform: uppercase;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ L-Text >= 26 ]*/
 .l1-txt1 {
   font-family: Montserrat-Black;
   font-size: 50px;
@@ -300,11 +271,7 @@ input.input100 {
 }
 
 
-/*==================================================================
-   SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
-==================================================================*/
-/*//////////////////////////////////////////////////////////////////
-[ Size ]*/
+
 .size1 {
   width: 100%;
   min-height: 100vh;
@@ -331,8 +298,7 @@ input.input100 {
   height: 50px;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Width ]*/
+
 .wsize1 {
   max-width: 390px;
 }
@@ -342,17 +308,10 @@ input.input100 {
 }
 
 
-/*//////////////////////////////////////////////////////////////////
-[ Height ]*/
 
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Background ]*/
 .bg0 {background-color: #fff;}
 
-/*---------------------------------------------*/
+
 .bg-g1 {
   background: ;
   background: -webkit-linear-gradient(-45deg, #17ead9, #7117ea);
@@ -361,12 +320,27 @@ input.input100 {
   background: linear-gradient(-45deg, #17ead9, #7117ea);
 }
 
+.mouse-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #7117ea;
+  background: radial-gradient(700px at 50% 50%, #17ead9, #7117ea);
+}
+.fixed-rect {
+  background: rgba(64, 150, 238, 0.5);
+  width: 40vw;
+  height: 40vh;
+  position: fixed;
+  left: 30vw;
+  top: 20vh;
+}
 
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ Border ]*/
 .bor1 {
   border-bottom: 3px solid #3a5dff;
 }
@@ -376,9 +350,6 @@ input.input100 {
 }
 
 
-/*==================================================================
-   WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE  
-==================================================================*/
 .where1-parent {
   position: relative;
 }
@@ -389,24 +360,20 @@ input.input100 {
   right: 5px;
 }
 
-
-/*==================================================================
- HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW 
-==================================================================*/
 .placeholder0::-webkit-input-placeholder { color: #999999;}
 .placeholder0:-moz-placeholder { color: #999999;}
 .placeholder0::-moz-placeholder { color: #999999;}
 .placeholder0:-ms-input-placeholder { color: #999999;}
 
 
-/*---------------------------------------------*/
+
 .how-countdown {
   background-color: #fff;
   border-radius: 18px;
   margin: 0px 18px 25px 18px;
 }
 
-/*---------------------------------------------*/
+
 .how-btn {
   padding: 10px 20px;
   background-color: transparent;
@@ -442,7 +409,6 @@ input.input100 {
   opacity: 1;
 }
 
-/*---------------------------------------------*/
 .how-btn1 {
   background-color: #3a5dff;
   border-radius: 25px;
@@ -454,7 +420,6 @@ input.input100 {
   color: #fff;
 }
 
-/*---------------------------------------------*/
 .how-btn2 {
   color: rgba(255,255,255,0.5);
 }
@@ -463,23 +428,17 @@ input.input100 {
   color: rgba(255,255,255,1);
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Pseudo ]*/
 
-/*------------------------------------------------------------------
-[ Focus ]*/
 .focus-in0:focus::-webkit-input-placeholder { color:transparent; }
 .focus-in0:focus:-moz-placeholder { color:transparent; }
 .focus-in0:focus::-moz-placeholder { color:transparent; }
 .focus-in0:focus:-ms-input-placeholder { color:transparent; }
 
 
-/*------------------------------------------------------------------
-[ Hover ]*/
+
 .hov-cl0:hover {color: #fff;}
 .hov-bg0:hover {background-color: #fff;}
 
-/*---------------------------------------------*/
 
 
 
@@ -487,13 +446,7 @@ input.input100 {
 
 
 
-/*==================================================================
-  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
-==================================================================*/
 
-
-/*//////////////////////////////////////////////////////////////////
-[ XL ]*/
 @media (max-width: 1200px) {
   .m-0-xl {margin: 0;}
   .m-lr-0-xl {margin-left: 0; margin-right: 0;}
@@ -513,13 +466,12 @@ input.input100 {
 
   .w-full-xl {width: 100%;}
 
-  /*---------------------------------------------*/
+ 
 
 }
 
 
-/*//////////////////////////////////////////////////////////////////
-[ LG ]*/
+
 @media (max-width: 992px) {
   .m-0-lg {margin: 0;}
   .m-lr-0-lg {margin-left: 0; margin-right: 0;}
@@ -539,14 +491,11 @@ input.input100 {
 
   .w-full-lg {width: 100%;}
 
-  /*---------------------------------------------*/
+
 
 
 }
 
-
-/*//////////////////////////////////////////////////////////////////
-[ MD ]*/
 @media (max-width: 768px) {
   .m-0-md {margin: 0;}
   .m-lr-0-md {margin-left: 0; margin-right: 0;}
@@ -565,13 +514,12 @@ input.input100 {
   .p-r-15-md {padding-right: 15px;}
 
   .w-full-md {width: 100%;}
-  /*---------------------------------------------*/
+  
 
 }
 
 
-/*//////////////////////////////////////////////////////////////////
-[ SM ]*/
+
 @media (max-width: 576px) {
   .m-0-sm {margin: 0;}
   .m-lr-0-sm {margin-left: 0; margin-right: 0;}
@@ -591,7 +539,7 @@ input.input100 {
 
   .w-full-sm {width: 100%;}
 
-  /*---------------------------------------------*/
+  
   .respon1 {
     padding-top: 35px;
   }
@@ -599,8 +547,7 @@ input.input100 {
 }
 
 
-/*//////////////////////////////////////////////////////////////////
-[ SSM ]*/
+
 @media (max-width: 480px) {
   .m-0-ssm {margin: 0;}
   .m-lr-0-ssm {margin-left: 0; margin-right: 0;}
@@ -619,6 +566,5 @@ input.input100 {
   .p-r-15-ssm {padding-right: 15px;}
 
   .w-full-ssm {width: 100%;}
-  /*---------------------------------------------*/
-
+  
 }
