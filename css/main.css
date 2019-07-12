@@ -326,7 +326,7 @@ input.input100 {
   bottom: 0;
   right: 0;
   /*background: #01fc15;*/
-  background: radial-gradient(1000px at 50% 50%, #3dcf03, #1c9999);
+  background: radial-gradient(1500px at 50% 50%, #4a4cdb, #FF0a6c);
 }
 .fixed-rect {
   background: rgba(0, 255, 76, 0.5);
