@@ -36,7 +36,7 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	
-	<div class="mouse-gradient"></div>
+	<div class="mouse-gradient">
 	<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
 		<span></span>
 		<div class="flex-col-c p-t-50 p-b-50" id="content">
@@ -54,21 +54,21 @@
 
 			<div class="flex-w flex-c cd100 p-b-82">
 				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 days">35</span>
+					<span class="l1-txt3 p-b-9 days"></span>
 					<span class="s1-txt1">Days</span>
 				</div>
 
 				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 hours">17</span>
+					<span class="l1-txt3 p-b-9 hours"></span>
 					<span class="s1-txt1">Hours</span>
 				</div>
 				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 minutes">50</span>
+					<span class="l1-txt3 p-b-9 minutes"></span>
 					<span class="s1-txt1">Minutes</span>
 				</div>
 
 				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt3 p-b-9 seconds">39</span>
+					<span class="l1-txt3 p-b-9 seconds"></span>
 					<span class="s1-txt1">Seconds</span>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 				Follow me for updates now!
 			</button>
 		</div>
-		
+		</div>
 	</div>
 
 	
@@ -140,19 +140,46 @@
 	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script>
-		$('.cd100').countdown100({
-			// Set Endtime here
-			// Endtime must be > current time
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 67,
-			endtimeHours: 12,
-			endtimeMinutes: 45,
-			endtimeSeconds: 24,
-			timeZone: "" 
-		});
+		// $('.cd100').countdown100({
+		// 	// Set Endtime here
+		// 	// Endtime must be > current time
+		// 	endtimeYear: 0,
+		// 	endtimeMonth: 0,
+		// 	endtimeDate: 67,
+		// 	endtimeHours: 12,
+		// 	endtimeMinutes: 45,
+		// 	endtimeSeconds: 24,
+		// 	timeZone: "" 
+		// });
 	</script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Sep 12, 2019 00:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get today's date and time
+		  var now = new Date().getTime();
+		
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+		
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		  // Display the result in the element with id="demo"
+		  $(".days").text(days)
+		  $(".hours").text(hours)
+		  $(".minutes").text(minutes)
+		  $(".seconds").text(seconds)
+		
+		}, 1000);
+	</script>
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 	<script >
 		$('.js-tilt').tilt({

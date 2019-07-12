@@ -79,9 +79,9 @@
       
       // Create an instance
       new MouseLight('.mouse-gradient', {
-        background: '#7117ea',
-        highlight: '#17ead9',
-        size: '800px',
+        background: '#4a4cdb',
+        highlight: '#FF0a6c',
+        size: '1500px',
       });
     function showValidate(input) {
         var thisAlert = $(input).parent();

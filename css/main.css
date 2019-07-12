@@ -312,13 +312,12 @@ input.input100 {
 .bg0 {background-color: #fff;}
 
 
-.bg-g1 {
-  background: ;
+/* .bg-g1 {
   background: -webkit-linear-gradient(-45deg, #17ead9, #7117ea);
   background: -o-linear-gradient(-45deg, #17ead9, #7117ea);
-  background: -moz-linear-gradient(-45deg, #17ead9, #7117ea);
+  background: -moz-linear-gradient(-45deg, #0cb6a8, #522094);
   background: linear-gradient(-45deg, #17ead9, #7117ea);
-}
+} */
 
 .mouse-gradient {
   position: fixed;
@@ -326,11 +325,11 @@ input.input100 {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #7117ea;
-  background: radial-gradient(700px at 50% 50%, #17ead9, #7117ea);
+  /*background: #01fc15;*/
+  background: radial-gradient(1000px at 50% 50%, #3dcf03, #1c9999);
 }
 .fixed-rect {
-  background: rgba(64, 150, 238, 0.5);
+  background: rgba(0, 255, 76, 0.5);
   width: 40vw;
   height: 40vh;
   position: fixed;
@@ -342,7 +341,7 @@ input.input100 {
 
 
 .bor1 {
-  border-bottom: 3px solid #3a5dff;
+  border-bottom: 3px solid #08e425;
 }
 
 .bor2 {
@@ -394,10 +393,10 @@ input.input100 {
   top: 0;
   left: 0;
   background: #6078ea;
-  background: -webkit-linear-gradient(45deg, #17ead9, #7117ea);
-  background: -o-linear-gradient(45deg, #17ead9, #7117ea);
-  background: -moz-linear-gradient(45deg, #17ead9, #7117ea);
-  background: linear-gradient(45deg, #17ead9, #7117ea);
+  background: -webkit-linear-gradient(45deg, #4a4cdb, #FF0a6c);
+  background: -o-linear-gradient(45deg, #4a4cdb, #FF0a6c);
+  background: -moz-linear-gradient(45deg, #4a4cdb, #FF0a6c);
+  background: linear-gradient(45deg, #4a4cdb, #FF0a6c);
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
