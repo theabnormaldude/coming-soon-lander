@@ -123,8 +123,16 @@ input.input100 {
   transform: scale(1);
 }
 
+.contact{
+  transition: transform .2s;
+  /* width: 30px;
+  height: 30px;
+  margin: 0 auto; */
+}
 
-
+.contact:hover{
+  transform: scale(0.80);
+}
 .validate-input {
   position: relative;
 }
@@ -326,7 +334,7 @@ input.input100 {
   bottom: 0;
   right: 0;
   /*background: #01fc15;*/
-  background: radial-gradient(1500px at 50% 50%, #4a4cdb, #FF0a6c);
+  background: radial-gradient(100px at 50% 50%, #4a4cdb, #FF0a6c);
 }
 .fixed-rect {
   background: rgba(0, 255, 76, 0.5);
@@ -341,7 +349,7 @@ input.input100 {
 
 
 .bor1 {
-  border-bottom: 3px solid #08e425;
+  border-bottom: 3px solid #FF0a6c;
 }
 
 .bor2 {
@@ -374,13 +382,14 @@ input.input100 {
 
 
 .how-btn {
-  padding: 10px 20px;
+  padding: 0px 0px;
   background-color: transparent;
-  border-radius: 25px;
-  border: 2px solid #fff;
+  border-radius: 35px;
+  border: 0px solid rgba(255, 255, 255, 0);
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
+  display: inline;
 }
 
 .how-btn::before {
@@ -392,11 +401,11 @@ input.input100 {
   height: 100%;
   top: 0;
   left: 0;
-  background: #6078ea;
+  /* background: #6078ea;
   background: -webkit-linear-gradient(45deg, #4a4cdb, #FF0a6c);
   background: -o-linear-gradient(45deg, #4a4cdb, #FF0a6c);
   background: -moz-linear-gradient(45deg, #4a4cdb, #FF0a6c);
-  background: linear-gradient(45deg, #4a4cdb, #FF0a6c);
+  background: linear-gradient(45deg, #4a4cdb, #FF0a6c); */
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -516,8 +525,6 @@ input.input100 {
   
 
 }
-
-
 
 @media (max-width: 576px) {
   .m-0-sm {margin: 0;}
